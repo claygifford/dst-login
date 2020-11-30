@@ -11,13 +11,32 @@
         <input type="submit" value="Login" class="btn solid" (click)="OnToggleMode($event)"/>
       </form>
       <form action="#" class="sign-up-form">
-        <h2 class="title">Sign in</h2>
-        <div class="input-field">
-          <i class="fas fa-user"></i>
-          <input type="text" placeholder="Username" />
+        <div>
+          <h2 class="title">You are logged in as [username]</h2>
+          <div>
+            <input type="submit" class="btn-logout" value="Logout" (click)="OnToggleMode($event)"/>
+          </div>
+          <div>
+            <input type="submit" class="btn" value="SM Current" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="4.3.71" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="4.3.70" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="4.3.69" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="4.3.55" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="local: 3000" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="local: 4372" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn" value="local: 3071" (click)="OnToggleMode($event)"/>
+          </div>
+          <div>
+            <input type="submit" class="btn-oib" value="OIB Current" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn-oib" value="1.0.0" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn-oib" value="Demo" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn-oib" value="LB" (click)="OnToggleMode($event)"/>
+            <input type="submit" class="btn-oib" value="localhost" (click)="OnToggleMode($event)"/>
+          </div>
+          <div>
+            <input type="submit" class="btn-ares" value="ARES" (click)="OnToggleMode($event)"/>
+          </div>
         </div>
-        <input type="submit" class="btn" value="Sign up" (click)="OnToggleMode($event)"/>
-
       </form>
     </div>
   </div>
